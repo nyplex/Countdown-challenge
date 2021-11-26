@@ -1,4 +1,4 @@
-const launchTime = new Date('November 27, 2021 17:58:00')
+const launchTime = new Date('March 27, 2022 17:58:00')
 const animatedScreen = document.getElementById('animated-days')
 
 
