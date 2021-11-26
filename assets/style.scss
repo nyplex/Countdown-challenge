@@ -55,6 +55,7 @@ h1 {
     height: 184px;
     background-color: transparent;
     position: relative;
+
     p {
         font-family: $font;
         font-weight: 700;
@@ -63,6 +64,11 @@ h1 {
         letter-spacing: 5.92px;
         text-align: center;
         color: #8385A9;
+        bottom: -45px;
+    position: absolute;
+    margin: 0;
+    left: 50%;
+    transform: translateX(-50%);
     }
 }
 
@@ -71,8 +77,15 @@ h1 {
     border-radius: 8px 8px 0 0;
     height: 50%;
     width: 100%;
-    position: relative;
+    position: absolute;
+    top: 0;
     overflow: hidden;
+}
+
+.animated-screen {
+    transform-origin: 50% 100%;
+    transform: perspective(331px) rotateX(0deg);
+    z-index: 100;
 }
 
 .container-screen-bottom {
@@ -81,7 +94,8 @@ h1 {
     height: 50%;
     width: 100%;
     box-shadow: 0px 10px #191a23;
-    position: relative;
+    position: absolute;
+    top: 50%;
     overflow: hidden;
 }
 
@@ -112,6 +126,7 @@ h1 {
     height: 100%;
     top: 0;
     position: absolute;
+
     .circle {
         height: 12px;
         width: 12px;
@@ -121,14 +136,17 @@ h1 {
         transform: translateY(-50%);
         border-radius: 100%;
     }
+
     .circle-screen-left {
         left: -6px;
-        
+
     }
+
     .circle-screen-right {
         right: -6px;
-        
+
     }
+
     .middle-line-screen {
         height: 3px;
         width: 100%;
